@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Passaporte para o Futuro</title>
 
 <style>
@@ -119,6 +120,40 @@ footer{
 }
 
 ul{text-align:left;}
+
+@media (max-width: 768px){
+
+.topo-conteudo{
+    flex-direction: column;
+    text-align: center;
+}
+
+.topo-texto, .topo-imagem{
+    width: 100%;
+}
+
+.topo-imagem{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.icones{
+    justify-content: center;
+}
+
+header h1{
+    font-size: 34px;
+}
+
+section{
+    padding: 30px 15px;
+}
+
+button{
+    width: 100%;
+    max-width: 280px;
+}
+}
 </style>
 </head>
 
@@ -221,4 +256,3 @@ function show(id){
 
 </body>
 </html>
-
