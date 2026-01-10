@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Passaporte para o Futuro</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f1f1f1;
+}
+
+header{
+    background: linear-gradient(135deg, #e91e63, #00bcd4);
+    color: white;
+    padding: 90px 20px;
+    text-align: left;
+}
+
+header .container{
+    max-width: 900px;
+    margin: auto;
+}
+
+header h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 18px;
+    max-width: 600px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.topo{
+  background: linear-gradient(135deg, #036D88, #E84C7F);
+  color: white;
+  padding: 60px 20px;
+}
+
+.topo-conteudo{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topo-texto{
+  width: 60%;
+}
+
+.topo-imagem{
+  width: 40%;
+  text-align: right;
+  margin-top: 0;
+}
+
+.topo-imagem img{
+  width: 100%;
+  max-width: auto;
+}
+
+.icones{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icones img{
+  width: 100%;
+  max-width: 550px; 
+  height: auto;
+}
+
+h1,h2{margin:0 0 15px 0;}
+p{color:black; line-height:1.6;}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+button{
+    padding:15px 25px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:#036d88;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{background:#222;}
+
+.section{
+    display:none;
+    margin-top:40px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+footer{
+    background:#036d88;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    font-size:14px;
+}
+
+ul{text-align:left;}
+</style>
+</head>
+
+<body>
+
+<header class="topo">
+<div class="topo-conteudo">
+
+    <div class="topo-texto">
+    <h1>Passaporte para o Futuro</h1>
+    <p>Plataforma de Educação e Empregabilidade para Jovens</p>
+    <p>Conectando estudantes a oportunidades, conhecimento e futuro.</p>
+    </div>
+
+    <div class="topo-imagem">
+    <div class="icones">
+    <img src="foto backgroud.png" alt="Materiais de Estudo">
+    </div>
+    </div>
+
+</div>
+</header>
+
+<section>
+<h2>Objetivo do Projeto</h2>
+<p>
+Este projeto tem como objetivo facilitar o acesso a materiais de estudo gratuitos,
+divulgar oportunidades de estágio e jovem aprendiz da cidade de São Roque e oferecer
+orientações básicas sobre currículo e entrevistas, promovendo a inclusão e o
+desenvolvimento profissional de jovens estudantes.
+</p>
+
+<h2>Público-Alvo</h2>
+<p>
+Jovens e adolescentes da cidade de São Roque – SP, especialmente estudantes do
+Instituto Federal Campus São Roque.
+</p>
+
+<div class="buttons">
+    <button onclick="show('materiais')">📚 Materiais de Estudo</button>
+    <button onclick="show('vagas')">💼 Vagas</button>
+    <button onclick="show('curriculo')">🧾 Currículo & Entrevista</button>
+    <button onclick="show('contato')">📞 Contato</button>
+</div>
+
+<div id="materiais" class="section">
+<h2>Materiais de Estudo</h2>
+<ul>
+<li>Apostilas e PDFs gratuitos</li>
+<li>Vídeo-aulas educativas</li>
+<li>Exercícios e simulados</li>
+<li>Conteúdos para ENEM e vestibulares</li>
+</ul>
+</div>
+
+<div id="vagas" class="section">
+<h2>Vagas</h2>
+<ul>
+<li>Estágios locais</li>
+<li>Programas Jovem Aprendiz</li>
+<li>Parcerias com empresas da região</li>
+</ul>
+</div>
+
+<div id="curriculo" class="section">
+<h2>Currículo & Entrevista</h2>
+<ul>
+<li>Modelo de currículo profissional</li>
+<li>Dicas de comportamento em entrevistas</li>
+<li>Orientações para primeiro emprego</li>
+</ul>
+</div>
+
+<div id="contato" class="section">
+<h2>Contato</h2>
+<p>Email: contatopassaportefuturo@gmail.com</p>
+<p>Instagram: @passaportefuturo</p>
+<p>Telefone: (11) 94521-7895</p>
+</div>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Passaporte para o Futuro - Protótipo</h3>
+        <p class="autor">
+            Projeto acadêmico desenvolvido por <strong> Maria Júlia C Gonzalez - RU:4686945</strong>  
+        </p>
+        <span>© 2025</span>
+    </div>
+</footer>
+
+<script>
+function show(id){
+    let sections = document.querySelectorAll('.section');
+    sections.forEach(s => s.style.display='none');
+    document.getElementById(id).style.display='block';
+}
+</script>
+
+</body>
+</html>
