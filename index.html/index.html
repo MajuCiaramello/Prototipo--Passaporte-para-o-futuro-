@@ -332,16 +332,17 @@ function show(id){
 
     let section = document.getElementById(id);
 
-    if (section.style.display === "block") {
-        section.style.display = "none";
-        return;
-    }
+    let isOpen = section.classList.contains("open");
 
-    let sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.style.display = 'none');
-
-    section.style.display = "block";
+    document.querySelectorAll('.section').forEach(s => {
+        s.style.display = "none";
+        s.classList.remove("open");
     });
+
+    if (!isOpen) {
+        section.style.display = "block";
+        section.classList.add("open");
+    }
 }
 </script>
 
@@ -355,4 +356,3 @@ function showSub(id){
 
 </body>
 </html>
-
