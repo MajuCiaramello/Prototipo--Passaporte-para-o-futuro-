@@ -41,44 +41,44 @@ section{
 }
 
 .topo{
-  background: linear-gradient(135deg, #036D88, #E84C7F);
-  color: white;
-  padding: 60px 20px;
+background: linear-gradient(135deg, #036D88, #E84C7F);
+color: white;
+padding: 60px 20px;
 }
 
 .topo-conteudo{
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .topo-texto{
-  width: 60%;
+width: 60%;
 }
 
 .topo-imagem{
-  width: 40%;
-  text-align: right;
-  margin-top: 0;
+width: 40%;
+text-align: right;
+margin-top: 0;
 }
 
 .topo-imagem img{
-  width: 100%;
-  max-width: auto;
+width: 100%;
+max-width: auto;
 }
 
 .icones{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+width: 100%;
+display: flex;
+justify-content: flex-end;
 }
 
 .icones img{
-  width: 100%;
-  max-width: 550px; 
-  height: auto;
+width: 100%;
+max-width: 550px; 
+height: auto;
 }
 
 h1,h2{margin:0 0 15px 0;}
@@ -101,6 +101,24 @@ button{
 }
 
 button:hover{background:#222;}
+
+.sub-buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sub-buttons button{
+    background: #E84C7F;
+    margin: 8px;
+}
+
+.sub-section{
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
 
 .section{
     display:none;
@@ -188,8 +206,7 @@ desenvolvimento profissional de jovens estudantes.
 
 <h2>Público-Alvo</h2>
 <p>
-Jovens e adolescentes da cidade de São Roque – SP, especialmente estudantes do
-Instituto Federal Campus São Roque.
+Jovens e adolescentes da cidade de São Roque – SP, especialmente estudantes das escolas públicas de São Roque.
 </p>
 
 <div class="buttons">
@@ -200,38 +217,102 @@ Instituto Federal Campus São Roque.
 </div>
 
 <div id="materiais" class="section">
+
 <h2>Materiais de Estudo</h2>
-<ul>
-<li>Apostilas e PDFs gratuitos</li>
-<li>Vídeo-aulas educativas</li>
-<li>Exercícios e simulados</li>
-<li>Conteúdos para ENEM e vestibulares</li>
-</ul>
+
+<div class="sub-buttons">
+    <button onclick="showSub('pdfs')">📄 PDFs</button>
+    <button onclick="showSub('videos')">🎥 Vídeos</button>
+    <button onclick="showSub('simulados')">📝 Simulados</button>
+</div>
+
+<div id="pdfs" class="sub-section">
+    <h3>PDFs Educacionais</h3>
+    <ul>
+        <li>Apostila de Matemática Básica</li>
+        <li>Apostila de Português</li>
+        <li>Guia de Redação para ENEM</li>
+    </ul>
+</div>
+
+<div id="videos" class="sub-section">
+    <h3>Vídeo-aulas</h3>
+    <ul>
+        <li>Canal Dicasdemat Sandro Curió - Português</li>
+        <li>Canal Professor Noslen - Matemática</li>
+        <li>Canal Curso Enem Gratuito - Vestibular</li>
+    </ul>
+</div>
+
+<div id="simulados" class="sub-section">
+    <h3>Simulados</h3>
+    <ul>
+        <li>Simulado ENEM</li>
+        <li>Simulado Vestibular</li>
+        <li>Exercícios por disciplina</li>
+    </ul>
+</div>
+
 </div>
 
 <div id="vagas" class="section">
-<h2>Vagas</h2>
-<ul>
-<li>Estágios locais</li>
-<li>Programas Jovem Aprendiz</li>
-<li>Parcerias com empresas da região</li>
-</ul>
+
+<h2>Oportunidades</h2>
+
+<div class="sub-buttons">
+    <button onclick="showSub('estagio')">🧑‍💼 Estágio</button>
+    <button onclick="showSub('aprendiz')">👨‍🎓 Jovem Aprendiz</button>
+    <button onclick="showSub('empresas')">🏢 Empresas Parceiras</button>
+</div>
+
+<div id="estagio" class="sub-section">
+    <p>Vagas de estágio em empresas locais de São Roque.</p>
+</div>
+
+<div id="aprendiz" class="sub-section">
+    <p>Programas Jovem Aprendiz disponíveis para estudantes.</p>
+</div>
+
+<div id="empresas" class="sub-section">
+    <p>Empresas parceiras oferecendo oportunidades na região.</p>
+</div>
+
 </div>
 
 <div id="curriculo" class="section">
+
 <h2>Currículo & Entrevista</h2>
-<ul>
-<li>Modelo de currículo profissional</li>
-<li>Dicas de comportamento em entrevistas</li>
-<li>Orientações para primeiro emprego</li>
-</ul>
+
+<div class="sub-buttons">
+    <button onclick="showSub('modelo')">📄 Modelo de Currículo</button>
+    <button onclick="showSub('dicas')">🎯 Dicas de Entrevista</button>
+    <button onclick="showSub('primeiro')">🚀 Primeiro Emprego</button>
+</div>
+
+<div id="modelo" class="sub-section">
+    <p>Modelo de currículo profissional para download.</p>
+</div>
+
+<div id="dicas" class="sub-section">
+    <ul> 
+        <h2> Vídeo-aulas</h2>
+        <li>Hackeando a Carreira</li>
+        <li>Wellington Fernandes</li>
+        <li>Adriana Cubas</li>
+    </ul>
+</div>
+
+<div id="primeiro" class="sub-section">
+    <p>Orientações para quem está buscando o primeiro emprego.</p>
+</div>
+
 </div>
 
 <div id="contato" class="section">
 <h2>Contato</h2>
 <p>Email: contatopassaportefuturo@gmail.com</p>
 <p>Instagram: @passaportefuturo</p>
-<p>Telefone: (00) 0000-0000</p>
+<p>Telefone: (00) 00000-0000</p>
 </div>
 
 </section>
@@ -248,12 +329,33 @@ Instituto Federal Campus São Roque.
 
 <script>
 function show(id){
+
+    let section = document.getElementById(id);
+
+    if (section.style.display === "block") {
+        section.style.display = "none";
+        return;
+    }
+
     let sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.style.display='none');
-    document.getElementById(id).style.display='block';
+    sections.forEach(s => s.style.display = 'none');
+
+    section.style.display = "block";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+<script>
+function showSub(id){
+    let subs = document.querySelectorAll('.sub-section');
+    subs.forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
 }
 </script>
 
 </body>
 </html>
-
